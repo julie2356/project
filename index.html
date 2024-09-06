@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website using HTML and CSS | Codehal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo"><span>J</span>J.</h2>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#AboutMe">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#" class="btn-talk">IABFH</a>
+    </header>
+
+    <section id="home" class="home">
+        <div class="content">
+            <h2>Hi, I'm <span>Jamielynn Muñoz</span></h2>
+            <h4>Portafolio Personal</h4>
+            <p>Bienvenidos a mi Portafolio! En este espacio, podran encontrar una recopilacion de mis trabajos, proyectos y un poco sobre mi. Cada seccion esta diseñada para mostrar mi desarrollo personal y presofesional. Espero que al explorar mi portafolio, puedan conocerme mejor y ver el impacto positivo que he tratado de tener en mi formación y dedicación.</p>
+           
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="AboutMe" class="AboutMe">
+        <div class="container">
+            <div class="text">
+                <h2>About Me</h2>
+            <p>
+                Soy Julie Jamielynn Muñoz estudiante del instituto Adventista Bilingue de French harbour, tengo 18 años y estoy en mi ultimo año de Bachillerato tecnico profesional en informatica.
+            </p>
+            <div class="image">
+                <img src="img/mephoto.jpeg" alt="Foto de Julie Jamielynn Muñoz">
+            </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="header">
+            <h2>Projects</h2>
+            <p>Este proyecto presenta una galeria de mis trabajos realizados en clase y como tarea en casa.</p>
+        </div>
+        <div class="project-container">
+            <div class="project-item">
+                <img src="img/menu.png" alt="Project 1">
+                <p class="description">MENU SLIDER </p>
+                <a href="proyectos/proyecto2/index.html">View Project 1</a>
+            </div>
+            <div class="project-item">
+                <img src="img/super.png" alt="Project 2">
+                <p class="description">TEXTO</p>
+                <a href="proyectos/proyecto1/index.html">View Project 2</a>
+            </div>
+            <div class="project-item">
+                <img src="img/smartwatch.png" alt="Project 3">
+                <p class="description">JJ SMARTWATCHES</p>
+                <a href="proyectos/proyecto3/index.html">View Project 3</a>
+            </div>
+            <div class="project-item">
+                <img src="img/audifonos.png" alt="Project 3">
+                <p class="description">Producto Audifonos</p>
+                <a href="proyectos/proyecto4/index.html">View Project 4</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <p></p>
+            <ul>
+                <li>Resolucion de problemas</li>
+                <li>Fundamentos del Diseño web</li>
+                <li>Conocimiento de Html, css y Javacript basicos</li>
+                <li>Dominio de herramientas de Diseño</li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <section  id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you have any questions or would like to get in touch, please fill out the form below</p>
+            <form action="/submit" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

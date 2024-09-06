@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 60px;
+}
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+.logo span {
+    color: #7d2ae8 ;
+}
+.navigation {
+    margin-left: -300px;
+}
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+.navigation a:hover {
+    color: #7d2ae8;
+}
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('img/fondo.avif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px; 
+  
+}
+.content {
+    max-width: 500px;
+    color: #555;
+}
+.content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.content h2 span {
+    color: #7d2ae8;
+}
+.content h4 {
+    font-size: 2em;
+}
+.content p {
+    padding: 10px 0 40px 0;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 50px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #7d2ae8;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #7d2ae8;
+    transition: .3s;
+}
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.social-icons a i {
+    color: #fff;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('img/fondo2.jpg'); /* Asegúrate de tener una imagen adecuada */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #7d2ae8;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #7d2ae8;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+}
+
+.form-group input {
+    background-color: transparent;
+}
+
+.form-group textarea{
+    background-color: transparent;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #7d2ae8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-submit:hover {
+    background: transparent;
+    color: #7d2ae8;
+    border: 2px solid #7d2ae8;
+}
+
+/*proyectos*/
+.projects {
+    padding: 30px 100px;
+    width: 100%;
+    height: 100vh;
+    background: url(img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+   
+}
+
+.header h2 {
+    font-size: 2.5em;
+    color: #7d2ae8;
+   margin-bottom: 20px;
+}
+
+.header p{
+    color: #555;
+}
+.project-container {
+    display: flex;
+    padding: 30px 100px;
+    background: transparent;
+    gap: 15px; 
+}
+
+.project-item {
+    background: transparent; 
+    padding: 15px;
+    border: 2px solid #7d2ae8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 250px;
+    width: 200px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item img {
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-item .description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #7d2ae8;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #7d2ae8;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 400;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-item a:hover {
+    background: #7d2ae8;
+    color: #fff;
+}
+
+.project-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*about me*/
+.AboutMe {
+    padding: 30px 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4; /* Fondo gris claro para la sección About Me */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('img/fondo3.jpg');
+}
+
+.AboutMe h2 {
+    font-size: 2.5em;
+    color: #7d2ae8;
+    margin-bottom: 20px;
+}
+
+.AboutMe .text {
+    max-width: 60%; 
+}
+
+.AboutMe p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 55%;
+    margin: 0;
+}
+
+.AboutMe .image {
+    max-width: 35%; 
+    text-align: left;
+}
+
+.AboutMe img {
+    max-width: 100%; 
+    height: auto; 
+    border: 2px solid #7d2ae8;
+}
+
+
+.skills {
+    padding: 30px 100px; 
+    width: 100%;
+    height: 100vh;
+    background: url(img/fondo3.jpg); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills h2 {
+    font-size: 2.5em; 
+    color: #7d2ae8; 
+   
+}
+
+.skills ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+}
+
+.skills ul li {
+    font-size: 1.2em; 
+    color: #555; 
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; 
+}
+
+.skills ul li:last-child {
+    border-bottom: none; 
+}
+
+.skills p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .navigation {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .home, .contact, .projects, .AboutMe, .skills {
+        padding: 20px;
+        height: auto;
+    }
+
+    .content h2 {
+        font-size: 2em;
+    }
+
+    .content h4 {
+        font-size: 1.5em;
+    }
+
+    .social-icons {
+        bottom: 20px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .AboutMe {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .AboutMe .text, .AboutMe .image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .AboutMe .image img {
+        width: 80%;
+    }
+}
+
+/* Estilos para tabletas */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .navigation {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .navigation a {
+        font-size: 1em;
+        margin-right: 20px;
+    }
+
+    .home, .contact, .projects, .AboutMe, .skills {
+        padding: 20px 50px;
+    }
+
+    .content h2 {
+        font-size: 2.5em;
+    }
+
+    .content h4 {
+        font-size: 1.8em;
+    }
+}
